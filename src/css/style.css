@@ -8,7 +8,7 @@
     --bolder-font: 900;
     --bg-color: #fcfcfc;
     --primary-color: #4756df;
-    --secondary-color: #ff7235;
+    --secondary-color: #c3775e;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
@@ -54,15 +54,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: #e6b0a7;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav h1 {
-    color: var(--primary-color);
+    color: #8e9f91;
 }
 
 nav a {
-    color: var(--primary-color);
+    color:#fcfcfc;
     transition: var(--transition);
 }
 nav a:hover {
