@@ -44,17 +44,31 @@ a:hover {
 
 body {
     font-family: var(--font-family);
+    background: linear-gradient(90deg,#e6b0a7 60%, #fdded9 60%);
+    position: sticky;
+    width: 100%;
+
+}
+.column{
+    float: right;
+}
+.hello{
+ display:block;
+ height: 450px;
+ width: 450px;
+
 }
 nav {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: #e6b0a7;
+    background: linear-gradient(90deg, #e6b0a7 60%, #fdded9 60%);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav h1 {
@@ -76,7 +90,17 @@ nav ul {
 }
 
 nav ul li {
+    display: block;
+    float: right;
     font-weight: var(--bold-font);
+}
+.navbar-brand .logo-image{
+    display: contents;
+    width: 10px;
+    height: 10px;
+    /*border-radius: 50%;*/
+    overflow: hidden;
+    margin-top: -6px;
 }
 .burger-menu {
     color: var(--primary-color);
@@ -85,4 +109,40 @@ nav ul li {
     background-color: transparent;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width: 899px){
+    .navbar ul li {
+        display: none;
+    }
+    .hello{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+    body{
+        background: #fdded9;
+    }
+    nav{
+        background: #fdded9;
+    }
+    .column{
+        display: block;
+        float: inside;
+    }
+
+    }
+
+@media screen and (min-width: 900px){
+    .hello{
+        display: block;
+        height: 350px;
+        width: 350px;
+    }
+    .nav ul li{
+        display: none;
+
+    }
 }
