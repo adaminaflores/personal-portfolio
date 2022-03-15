@@ -45,17 +45,38 @@ a:hover {
 body {
     font-family: var(--font-family);
     background: linear-gradient(90deg,#e6b0a7 60%, #fdded9 60%);
-    position: sticky;
-    /*width: 100%;*/
-    /*font-size: 20px;*/
-    /*display: flex;*/
-    /*justify-content: space-evenly;*/
-    /*padding: 5%;*/
+    /*position: sticky;*/
+
 
 }
 .handwriting {
     font-family: 'adaminaregular', sans-serif;
     font-size: 48px;
+
+}
+.hero {
+     display: flex;
+     float: right;
+     align-items: center;
+     justify-content: right;
+     gap: 2.5rem;
+     max-width: 68.75rem;
+    margin: auto;
+ }
+.bio-title{
+    font-family: 'adaminaregular', sans-serif;
+    text-align: center;
+
+}
+.bio {
+    display: block;
+    position: fixed;
+    margin-top: 175px;
+    width: 20rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    text-align: center;
+    /*box-shadow: 0px 2px 15px 2px var(--primary-shadow);*/
 }
 .column{
     display: block;
@@ -64,13 +85,17 @@ body {
 }
 
 .hello{
-    display:block;
-    height: 300px;
-    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 255px;
+    width: 255px;
     float: right;
-    margin-left: auto;
-    margin-right: 5%;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
     position: center;
+
 }
 
 nav {
@@ -117,6 +142,20 @@ nav ul li {
     cursor: pointer;
     display: none;
 }
+@media screen and (max-width: 720px) {
+    .hero {
+        /*display: flex;*/
+        /*float: bottom;*/
+        /*margin-top: -4rem;*/
+        /*flex-direction: column;*/
+        /*gap: 0;*/
+    }
+    .bio {
+        /*margin-top: -7rem;*/
+        /*width: 20.5rem;*/
+    }
+
+}
 
 @media screen and (max-width: 850px){
     .navbar ul li {
@@ -126,8 +165,9 @@ nav ul li {
         display: block;
         margin-left: 10%;
         margin-right: auto;
-        height: 400px;
-        width: 400px;
+        margin-top: 1rem;
+        height: 350px;
+        width: 350px;
         position: center;
         float: left;
 
@@ -143,6 +183,29 @@ nav ul li {
         float: snap;
         position: center;
     }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        align-items: center;
+        justify-content: center;
+        margin-top: -7rem;
+        gap: 0;
+        margin-left: -15rem;
+        /*max-width: 68.75rem;*/
+
+    }
+    .bio {
+        display: block;
+        align-items: center;
+        justify-content: left;
+        margin-top: 20rem;
+        width: 20.5rem;
+        padding: 0.625rem;
+        border-radius: 6px;
+        /*box-shadow: 0px 2px 15px 2px var(--primary-shadow);*/
+    }
+
 
     }
 
