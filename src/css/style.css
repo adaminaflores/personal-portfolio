@@ -161,6 +161,16 @@ nav ul li {
     margin-top: 20px;
 }
 
+em:hover{
+    /*font-size: 50px;*/
+    font-weight: bold;
+    color: #fcfcfc;
+
+}
+
+
+
+
 
 @media screen and (max-width: 850px){
     .navbar ul li {
